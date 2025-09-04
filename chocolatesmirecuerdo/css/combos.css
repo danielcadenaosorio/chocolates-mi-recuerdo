@@ -1,0 +1,15 @@
+#combos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.combo {
+  background: #fdf6e3;
+  border: 2px dashed #6b3e26;
+  padding: 1em;
+  width: 250px;
+  text-align: center;
+}

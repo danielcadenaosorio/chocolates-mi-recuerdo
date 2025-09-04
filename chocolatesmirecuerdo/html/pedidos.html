@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pedido | Mi Recuerdo</title>
+   <link rel="stylesheet" href="../js/pedidos.js" />
+  <link rel="stylesheet" href="../css/pedidos.css" />
+  <link rel="stylesheet" href="../html/catalogo.html" />
+  <link rel="stylesheet" href="../html/contacto.html" />
+  <link rel="stylesheet" href="../html/combos.html" />
+  <link rel="stylesheet" href="../html/servicios.html" />
+  <link rel="stylesheet" href="../index.html" />
+</head>
+<body>
+  
+  <a href="https://wa.me/57TU_NUMERO" class="whatsapp-btn">📱 Pedir por WhatsApp</a>
+
+  <header>
+    <h1>Haz tu Pedido</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="./catalogo.html">catalogo</a>
+      <a href="./combos.html">combos</a>
+    </nav>
+  </header>
+
+  <section>
+    <form onsubmit="enviarPedido(event)">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="text" placeholder="Producto o combo" required />
+      <input type="text" placeholder="Dirección de entrega" required />
+      <button type="submit">Enviar pedido</button>
+    </form>
+    <p id="confirmacion"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Chocolates Mi Recuerdo</p>
+  </footer>
+</body>
+</html>
+<script>    function enviarPedido(event) {
+      event.preventDefault();
+      document.getElementById("confirmacion").textContent = "✅ Pedido enviado. Te contactaremos pronto.";
+    }</script>

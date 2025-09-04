@@ -1,0 +1,12 @@
+#servicios {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.servicio {
+  background: #fff0e6;
+  border-left: 5px solid #6b3e26;
+  padding: 1em;
+}
